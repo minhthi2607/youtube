@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">YouTube Clone</a>
+    <form id="search-form">
+      <input type="search" id="search-input" placeholder="Search videos">
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+    <div class="nav-actions" id="nav-actions"></div>
+  </header>
+
+  <main>
+    <div id="video-grid" class="video-grid"></div>
+    <div id="empty" class="empty-state" style="display:none">No videos found.</div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>
