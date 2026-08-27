@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel - YouTube Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">YouTube Clone</a>
+    <div class="nav-actions" id="nav-actions"></div>
+  </header>
+
+  <main>
+    <div class="channel-row" style="border-bottom:1px solid #303030; margin-bottom:20px;">
+      <div>
+        <h1 id="channel-name" style="margin:0 0 6px;"></h1>
+        <div class="meta" id="channel-meta"></div>
+      </div>
+      <button class="btn primary" id="subscribe-btn" style="display:none;">Subscribe</button>
+    </div>
+
+    <div id="video-grid" class="video-grid"></div>
+    <div id="empty" class="empty-state" style="display:none">This channel has no videos yet.</div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/channel.js"></script>
+</body>
+</html>

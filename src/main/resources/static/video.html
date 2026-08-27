@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch - YouTube Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">YouTube Clone</a>
+    <div class="nav-actions" id="nav-actions"></div>
+  </header>
+
+  <main>
+    <div class="watch-layout">
+      <div class="watch-main">
+        <video class="player" id="player" controls></video>
+
+        <h1 class="watch-title" id="video-title"></h1>
+        <div class="meta" id="video-meta"></div>
+
+        <div class="channel-row">
+          <div>
+            <a class="channel-name" id="channel-link" href="#"></a>
+            <div class="meta" id="subscriber-count"></div>
+          </div>
+          <button class="btn primary" id="subscribe-btn" style="display:none;">Subscribe</button>
+        </div>
+
+        <div class="reaction-row">
+          <button id="like-btn">&#128077; <span id="like-count">0</span></button>
+          <button id="dislike-btn">&#128078; <span id="dislike-count">0</span></button>
+        </div>
+
+        <div class="description-box" id="video-description"></div>
+
+        <section class="comments-section">
+          <h3 id="comment-count-heading">Comments</h3>
+
+          <form class="comment-form" id="comment-form" style="display:none;">
+            <textarea id="comment-input" placeholder="Add a comment..." maxlength="1000" required></textarea>
+            <button class="btn primary" type="submit">Comment</button>
+          </form>
+
+          <div id="comments-list"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/video.js"></script>
+</body>
+</html>

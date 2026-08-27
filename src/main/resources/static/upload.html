@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload - YouTube Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/index.html">YouTube Clone</a>
+    <div class="nav-actions" id="nav-actions"></div>
+  </header>
+
+  <main>
+    <form class="auth-form" id="upload-form" style="max-width:600px;">
+      <h1>Upload a video</h1>
+      <div class="error-box" id="error-box"></div>
+
+      <label for="title">Title</label>
+      <input id="title" name="title" required maxlength="200">
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <label for="file">Video file (mp4 or webm, up to 500MB)</label>
+      <input id="file" name="file" type="file" accept="video/mp4,video/webm" required>
+
+      <button class="btn primary" type="submit" id="submit-btn">Upload</button>
+    </form>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/upload.js"></script>
+</body>
+</html>
